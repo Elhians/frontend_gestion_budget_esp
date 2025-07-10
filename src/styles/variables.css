@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #003366;/*bleu de ce foutu PGI*/
+  --secondary-color: #e85a0c;
+  --background-color: #f4f7fa;
+  --text-color: #333;
+  --light-gray: #e9ecef;
+  --border-color: #dee2e6;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --admin-color: #6f42c1;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
