@@ -50,8 +50,10 @@ const ChefDashboard = () => {
   // Filtrer les données par département
   const besoinsDepartement = besoins.filter(besoin => {
     const auteur = utilisateurs.find(u => u.id === besoin.idAuteur);
-    return auteur && auteur.idDepartementAppartenance === departementActuel;
-  });
+    return auteur 
+           && auteur.idDepartementAppartenance === departementActuel
+           && besoin.statut === "Soumis";
+});
 
   const besoinsSpecifiquesDepartement = besoins.filter(besoin => {
     return besoin.titre?.startsWith(`(dep-${departementActuel})`);
