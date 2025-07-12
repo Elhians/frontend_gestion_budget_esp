@@ -5,9 +5,15 @@ import RoleSelector from './RoleSelector';
 const Header = () => {
   const { roleDeConnection } = useContext(AppContext);
 
+  const handleTitleClick = () => {
+    window.location.href = "https://frontend-gestion-budget-esp.onrender.com";
+  };
+
   return (
     <header>
-      <h1>ESP - Digitalisation du Budget</h1>
+      <h1 style={{ cursor: 'pointer' }} onClick={handleTitleClick}>
+        ESP - Digitalisation du Budget
+      </h1>
       {roleDeConnection === 'CHEF_DEPARTEMENT' && <RoleSelector />}
     </header>
   );
